@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gys-appcomm" />
         <module name="gys-controller" />
+        <module name="gys-domain" />
+        <module name="gys-repository" />
+        <module name="gys-service" />
         <module name="gysappcomm" />
         <module name="gysdomain" />
         <module name="gysrepository" />
@@ -16,7 +20,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gys-appcomm" options="-parameters" />
       <module name="gys-controller" options="-parameters" />
+      <module name="gys-domain" options="-parameters" />
+      <module name="gys-repository" options="-parameters" />
+      <module name="gys-service" options="-parameters" />
       <module name="gysappcomm" options="-parameters" />
       <module name="gysdomain" options="-parameters" />
       <module name="gysrepository" options="-parameters" />

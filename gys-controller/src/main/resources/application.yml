@@ -1,0 +1,19 @@
+
+spring:
+  profiles:
+    active: product
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://teacherzhu.uicp.net:34626/jja1804?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: jja1804
+    password: jja1804
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: UTC
+naming:
+  implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+  physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

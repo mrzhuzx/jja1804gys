@@ -15,7 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 public interface GuanggaoRepository extends JpaRepository<Guanggao,Long> {
     @Transactional
     @Modifying(clearAutomatically = true)
-
     @Query("update Guanggao set ggId=?1 ,ggTitle=?2,ggImg=?3where ggUrl=?4 ")
     int update(Long ggId, String ggTitle, String ggImg, String ggUrl);
 }

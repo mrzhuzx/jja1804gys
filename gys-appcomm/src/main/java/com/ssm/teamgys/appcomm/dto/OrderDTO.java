@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import com.ssm.teamgys.appcomm.enums.OrderStatusEnum;
 import com.ssm.teamgys.appcomm.enums.PayStatusEnum;
-import com.ssm.teamgys.domain.OrderDetail;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -53,7 +52,7 @@ public class OrderDTO {
    // @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
-    List<OrderDetail> orderDetailList;
+   // List<OrderDetail> orderDetailList;
 
 
 }
